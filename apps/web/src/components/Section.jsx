@@ -10,14 +10,33 @@ const Section = ({ children, className, background = 'transparent', ...props }) 
     light: 'bg-medait-light',
     white: 'bg-white',
     dark: 'bg-medait-dark text-white',
-    primary: 'bg-medait-primary text-white'
+    primary: 'bg-medait-primary text-white',
   };
+
+  const isDark = background === 'dark' || background === 'primary';
+
+  // Make text readable on dark backgrounds without changing every page manually
+  const darkReadable = isDark
+    ? `
+      [&_h1]:text-white
+      [&_h2]:text-white
+      [&_h3]:text-white
+      [&_h4]:text-white
+      [&_p]:text-white/80
+      [&_li]:text-white/85
+      [&_span]:text-white/80
+      [&_a]:text-white
+      [&_a]:underline
+      [&_a:hover]:text-white
+    `
+    : '';
 
   return (
     <section
       className={cn(
-        'py-16 sm:py-20 lg:py-24',
-        bgClasses[background] || bgClasses.transparent,
+        'py-16',
+        bgClasses[background],
+        darkReadable,
         className
       )}
       {...props}
