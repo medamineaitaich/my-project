@@ -87,7 +87,7 @@ const ContactPage = () => {
       {/* Contact Information & Form */}
       <Section>
         <Container>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 on-dark">
             {/* Contact Information */}
             <motion.div
               initial="initial"
