@@ -225,7 +225,7 @@ const LegalCompliancePage = () => {
       <Section>
         <Container>
           <motion.div
-            className="text-center mb-12"
+            className="text-center mb-12 on-dark"
             initial="initial"
             whileInView="animate"
             viewport={{ once: true }}
@@ -301,5 +301,6 @@ const LegalCompliancePage = () => {
     </>
   );
 };
+
 
 export default LegalCompliancePage;
