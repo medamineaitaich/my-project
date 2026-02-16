@@ -282,7 +282,7 @@ const HomePage = () => {
             <h2 className="text-3xl sm:text-4xl font-bold mb-6">
               Let's Build Something Great Together
             </h2>
-            <p className="text-lg text-gray-300 mb-8">
+            <p className="text-lg text-white/80 mb-8">
               Contact us today to discuss your project or learn more about our services and brands.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -304,5 +304,6 @@ const HomePage = () => {
     </>
   );
 };
+
 
 export default HomePage;
