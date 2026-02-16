@@ -34,7 +34,7 @@ const HomePage = () => {
       <section
         className="relative min-h-[600px] flex items-center justify-center text-white"
         style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1643267392842-29f8354e236c')`,
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url('https://images.unsplash.com/photo-1643267392842-29f8354e236c')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundAttachment: 'fixed'
@@ -50,7 +50,7 @@ const HomePage = () => {
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
               {COMPANY.name} — Digital Commerce & Media Company
             </h1>
-            <p className="text-xl sm:text-2xl mb-8 text-gray-200">
+            <p className="text-xl sm:text-2xl mb-8 text-white/85">
               Building sustainable digital brands and delivering professional services since {COMPANY.founded}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -61,7 +61,11 @@ const HomePage = () => {
                 </Button>
               </Link>
               <Link to="/contact">
-                <Button variant="secondary" size="lg" className="w-full sm:w-auto bg-white/10 border-white text-white hover:bg-white hover:text-medait-dark">
+                <Button
+                  variant="secondary"
+                  size="lg"
+                  className="w-full sm:w-auto bg-white/10 border-white text-white hover:bg-white hover:text-medait-dark"
+                >
                   Get in Touch
                 </Button>
               </Link>
@@ -250,15 +254,19 @@ const HomePage = () => {
               viewport={{ once: true }}
               variants={{ ...fadeInUp, transition: { delay: 0.2, duration: 0.6 } }}
             >
+              {/* Purple card => force readable text */}
               <Card className="bg-medait-primary text-white">
-                <h3 className="text-2xl font-bold mb-4">
+                <h3 className="text-2xl font-bold mb-4 text-white">
                   Ready to Work Together?
                 </h3>
-                <p className="mb-6">
+                <p className="mb-6 text-white/85">
                   Whether you need WordPress development, content publishing, or e-commerce solutions, we're here to help.
                 </p>
                 <Link to="/services">
-                  <Button variant="secondary" className="bg-white text-medait-primary hover:bg-gray-100 border-white w-full sm:w-auto gap-2">
+                  <Button
+                    variant="secondary"
+                    className="bg-white text-medait-primary hover:bg-gray-100 border-white w-full sm:w-auto gap-2"
+                  >
                     Explore Our Services
                     <ArrowRight className="w-5 h-5" />
                   </Button>
@@ -269,17 +277,17 @@ const HomePage = () => {
         </Container>
       </Section>
 
-      {/* Final CTA */}
+      {/* Final CTA (Dark background => force readable text) */}
       <Section background="dark">
         <Container>
           <motion.div
-            className="text-center max-w-3xl mx-auto"
+            className="text-center max-w-3xl mx-auto text-white"
             initial="initial"
             whileInView="animate"
             viewport={{ once: true }}
             variants={fadeInUp}
           >
-            <h2 className="text-3xl sm:text-4xl font-bold mb-6">
+            <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-white">
               Let's Build Something Great Together
             </h2>
             <p className="text-lg text-white/80 mb-8">
@@ -293,7 +301,11 @@ const HomePage = () => {
                 </Button>
               </Link>
               <Link to="/about">
-                <Button variant="secondary" size="lg" className="w-full sm:w-auto bg-white/10 border-white text-white hover:bg-white hover:text-medait-dark">
+                <Button
+                  variant="secondary"
+                  size="lg"
+                  className="w-full sm:w-auto bg-white/10 border-white text-white hover:bg-white hover:text-medait-dark"
+                >
                   Learn More About Us
                 </Button>
               </Link>
@@ -304,6 +316,5 @@ const HomePage = () => {
     </>
   );
 };
-
 
 export default HomePage;
