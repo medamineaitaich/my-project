@@ -87,13 +87,14 @@ const ContactPage = () => {
       {/* Contact Information & Form */}
       <Section>
         <Container>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 on-dark">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 ">
             {/* Contact Information */}
             <motion.div
               initial="initial"
               whileInView="animate"
               viewport={{ once: true }}
               variants={fadeInUp}
+              className="on-dark"
             >
               <h2 className="text-3xl font-bold text-medait-dark mb-6">
                 Get in Touch
