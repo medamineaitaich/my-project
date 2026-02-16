@@ -94,12 +94,12 @@ const ContactPage = () => {
               whileInView="animate"
               viewport={{ once: true }}
               variants={fadeInUp}
-              className="on-dark"
+              
             >
-              <h2 className="text-3xl font-bold text-medait-dark mb-6">
+              <h2 className="text-3xl font-bold text-medait-dark mb-6 on-dark">
                 Get in Touch
               </h2>
-              <p className="text-gray-700 mb-8">
+              <p className="text-gray-700 mb-8 on-dark">
                 Whether you have questions about our services, want to discuss a project, or just want to say hello, we're here to help.
               </p>
 
