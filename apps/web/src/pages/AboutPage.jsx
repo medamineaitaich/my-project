@@ -46,7 +46,7 @@ const AboutPage = () => {
       {/* Company Story */}
       <Section>
         <Container>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center on-dark">
             <motion.div
               initial="initial"
               whileInView="animate"
@@ -214,7 +214,7 @@ const AboutPage = () => {
               viewport={{ once: true }}
               variants={fadeInUp}
             >
-              <div className="w-16 h-16 bg-medait-light rounded-full flex items-center justify-center mx-auto mb-6">
+              <div className="w-16 h-16 bg-medait-light rounded-full flex items-center justify-center mx-auto mb-6 on-dark">
                 <Briefcase className="w-8 h-8 text-medait-primary" />
               </div>
               <h2 className="text-3xl sm:text-4xl font-bold text-medait-dark mb-4">
