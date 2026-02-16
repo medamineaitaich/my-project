@@ -208,13 +208,13 @@ const AboutPage = () => {
         <Container>
           <div className="max-w-4xl mx-auto">
             <motion.div
-              className="text-center mb-12"
+              className="text-center mb-12 on-dark"
               initial="initial"
               whileInView="animate"
               viewport={{ once: true }}
               variants={fadeInUp}
             >
-              <div className="w-16 h-16 bg-medait-light rounded-full flex items-center justify-center mx-auto mb-6 on-dark">
+              <div className="w-16 h-16 bg-medait-light rounded-full flex items-center justify-center mx-auto mb-6">
                 <Briefcase className="w-8 h-8 text-medait-primary" />
               </div>
               <h2 className="text-3xl sm:text-4xl font-bold text-medait-dark mb-4">
