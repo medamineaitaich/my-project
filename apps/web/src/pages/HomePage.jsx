@@ -104,16 +104,16 @@ const HomePage = () => {
       <Section>
         <Container>
           <motion.div
-            className="text-center mb-12"
+            className="text-center mb-12 on-dark"
             initial="initial"
             whileInView="animate"
             viewport={{ once: true }}
             variants={fadeInUp}
           >
-            <h2 className="text-3xl sm:text-4xl font-bold text-medait-dark on-dark mb-4">
+            <h2 className="text-3xl sm:text-4xl font-bold text-medait-dark mb-4">
               What We Do
             </h2>
-            <p className="text-lg text-gray-600 max-w-2xl on-dark mx-auto">
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
               We operate diverse digital brands and provide comprehensive services across e-commerce, media, and technology.
             </p>
           </motion.div>
@@ -318,4 +318,5 @@ const HomePage = () => {
 };
 
 export default HomePage;
+
 
