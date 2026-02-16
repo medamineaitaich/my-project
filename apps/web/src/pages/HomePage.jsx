@@ -110,10 +110,10 @@ const HomePage = () => {
             viewport={{ once: true }}
             variants={fadeInUp}
           >
-            <h2 className="text-3xl sm:text-4xl font-bold text-medait-dark mb-4">
+            <h2 className="text-3xl sm:text-4xl font-bold text-medait-dark on-dark mb-4">
               What We Do
             </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            <p className="text-lg text-gray-600 max-w-2xl on-dark mx-auto">
               We operate diverse digital brands and provide comprehensive services across e-commerce, media, and technology.
             </p>
           </motion.div>
@@ -225,7 +225,7 @@ const HomePage = () => {
       {/* Why MEDAIT LLC */}
       <Section>
         <Container>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center on-dark">
             <motion.div
               initial="initial"
               whileInView="animate"
@@ -318,3 +318,4 @@ const HomePage = () => {
 };
 
 export default HomePage;
+
