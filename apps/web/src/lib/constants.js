@@ -31,7 +31,7 @@ export const COMPANY = {
   name: 'MEDAIT LLC',
   legalName: 'MEDAIT LLC',
   tagline: 'Digital Commerce & Media Company',
-  founded: 2026,
+  founded: 2025,
   jurisdiction: 'New Mexico, USA',
   businessType: 'E-commerce & AdMedia Company',
   
