@@ -31,22 +31,22 @@ export const COMPANY = {
   name: 'MEDAIT LLC',
   legalName: 'MEDAIT LLC',
   tagline: 'Digital Commerce & Media Company',
-  founded: 2022,
+  founded: 2026,
   jurisdiction: 'New Mexico, USA',
   businessType: 'E-commerce & AdMedia Company',
   
   address: {
-    street: '123 Innovation Drive',
+    street: '1209 MOUNTAIN ROAD PL NE STE R',
     city: 'Albuquerque',
     state: 'NM',
-    zip: '87101',
+    zip: '87110',
     country: 'USA'
   },
   
   contact: {
-    phone: '+1 (505) 555-0123',
+    phone: '+1 (202) 773-7432',
     email: 'CONTACT@MEDAITLLC.COM',
-    supportEmail: 'SUPPORT@MEDAITLLC.COM'
+    supportEmail: 'CONTACT@MEDAITLLC.COM'
   },
   
   social: {
