@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Leaf } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { NAV_LINKS, COMPANY } from '@/lib/constants.js';
 import Container from '@/components/Container.jsx';
+import logo from '@/assets/Medait.png';
 
 /**
  * Header component with sticky navigation
@@ -18,10 +19,12 @@ const Header = () => {
       <Container>
         <nav className="flex items-center justify-between py-4">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2 group">
-            <div className="w-10 h-10 bg-medait-primary rounded-lg flex items-center justify-center group-hover:bg-[#256029] transition-colors">
-              <Leaf className="w-6 h-6 text-white" />
-            </div>
+          <Link to="/" className="flex items-center gap-3 group">
+            <img
+              src={logo}
+              alt={`${COMPANY.name} logo`}
+              className="h-10 w-auto object-contain"
+            />
             <div className="flex flex-col">
               <span className="text-xl font-bold text-medait-dark">
                 {COMPANY.name}
@@ -55,11 +58,7 @@ const Header = () => {
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label="Toggle menu"
           >
-            {mobileMenuOpen ? (
-              <X className="w-6 h-6" />
-            ) : (
-              <Menu className="w-6 h-6" />
-            )}
+            {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
         </nav>
 
